@@ -1,12 +1,13 @@
-$primary_color: #130F49;
-$secondary_color: #effbf8;
+$primary_color: #effbf8;
+$secondary_color: #E9F9FF;
+$tertiary_color: #f6fffd;
 $blue_color: #a5a6ff;
 $yellow_color: #ff972d;
 $dark_Color: #130F49;
 $purple_color: #5D3BEE;
 $light_blue_color: #E9F9FF;
 $pink_color: #FFF5F6;
-$bg_color: #F1F8FE;
+$bg_color: #1c232e;
 
 $inter: 'Inter', 'sans-serif';
 $karla: 'Karla', 'sans-serif';
@@ -16,4 +17,14 @@ $kristi: 'Kristi', cursive;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+body {
+    --background: $bg_color;
+    --accent: $primary_color;
+    margin: 0;
+    padding: 0;
+    background-color: --background;
+    color: --accent;
+    padding-bottom: 100px;
 }

@@ -4,6 +4,7 @@ import { motion, useCycle } from "framer-motion";
 import { useDimensions } from '../../utils/use-dimensiones';
 import { Navigation } from '../navigation/Navigation';
 import { MenuToggle } from '../menuToggle/MenuToggle';
+import { Footer } from '../footer/Footer';
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -45,6 +46,7 @@ export const Layout = () => {
           <MenuToggle toggle={() => toggleOpen()} />
         </motion.nav>
         <Outlet/>
+        <Footer title="Dexxtronex - Michael Pérez" />
     </>
   )
 }

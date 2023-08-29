@@ -7,19 +7,14 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   background: $bg_color;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -27,12 +22,12 @@ nav {
 }
 
 .background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   width: 300px;
-  background: #fff;
+  background: $bg_color;
 }
 
 button {
@@ -42,7 +37,7 @@ button {
   -moz-user-select: none;
   -ms-user-select: none;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 18px;
   left: 15px;
   width: 50px;
